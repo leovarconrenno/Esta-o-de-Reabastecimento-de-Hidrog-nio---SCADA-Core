@@ -4,7 +4,7 @@
 [LUCA AUGUSTO](d2024004671@unifei.edu.br) &bull;
 [LEO VARGAS](d2024006120@unifei.edu.br)
 
-# <img src="hydrogen.gif" height="64px"  Estação de Reabastecimento de Hidrogênio <img src="hydrogen.gif" height="64px"
+# <img src="hydrogen.gif" height="32px" />  Estação de Reabastecimento de Hidrogênio <img src="hydrogen.gif" height="32px" />
 
 ## INTRODUÇÂO
 
