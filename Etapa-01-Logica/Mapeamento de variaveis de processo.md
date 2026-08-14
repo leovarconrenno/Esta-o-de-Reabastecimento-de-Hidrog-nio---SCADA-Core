@@ -14,18 +14,22 @@ Na automação industrial (norma ISA-5.1), instrumentos e atuadores emitem e rec
 | **PSV-101**      | Válvula de Alívio       | Proteção contra sobrepressão         | $r\_1$              | Válvula de alívio de pressão ATUADA
 | **XV-101**       | Válvula Corte Rápido    | entrada do tanque de Armazenamento de baixa pressão      | $v\_1$              | Válvula de segurança de entrada ABERTA
 | **SL-101**       | Sinalizador / luz    | alarme do tanque de baixa pressão     | $s\_1$              | Luz ACESSA                                    
-| **PT-201**       | Transmissor Pressão     | Pressão do tanque de Armazenamento de média pressão   | $p\_1$              | Pressão excede o limite máximo de armazenamento ($P > 400\text{ bar}$) |
-| **TT-201**       | Transmissor Temp.       | Temp. do tanque de Armazenamento de média pressão      | $t\_1$              | Temperatura excede o limite seguro do vaso ($T > 85^\circ\text{C}$)    |
-| **AT-201**       | Detector de Gás H₂      | Concentração de H₂ na área do tanque de Armazenamento de média pressão          | $g\_1$              | Vazamento de hidrogênio detectado ($C > 1\text{% vol, } 25\text{% LIE}$) |                            |                                   |
-| **PSV-201**      | Válvula de Alívio       | Proteção contra sobrepressão         | $r\_1$              | Válvula de alívio de pressão ATUADA
-| **XV-201**       | Válvula Corte Rápido    | entrada do tanque de Armazenamento de média pressão      | $v\_1$              | Válvula de segurança de entrada ABERTA
-| **SL-201**       | Sinalizador / luz    | alarme do tanque de média pressão     | $s\_1$              | Luz ACESSA                                     
-| **PT-301**       | Transmissor Pressão     | Pressão do tanque de Armazenamento de alta pressão   | $p\_1$              | Pressão excede o limite máximo de armazenamento ($P > 400\text{ bar}$) |
-| **TT-301**       | Transmissor Temp.       | Temp. do tanque de Armazenamento de alta pressão      | $t\_1$              | Temperatura excede o limite seguro do vaso ($T > 85^\circ\text{C}$)    |
-| **AT-301**       | Detector de Gás H₂      | Concentração de H₂ na área do tanque de Armazenamento de alta pressão          | $g\_1$              | Vazamento de hidrogênio detectado ($C > 1\text{% vol, } 25\text{% LIE}$) |                            |                                   |
-| **PSV-301**      | Válvula de Alívio       | Proteção contra sobrepressão         | $r\_1$              | Válvula de alívio de pressão ATUADA
-| **XV-301**       | Válvula Corte Rápido    | entrada do tanque de Armazenamento de alta pressão      | $v\_1$              | Válvula de segurança de entrada ABERTA
-| **SL-301**       | Sinalizador / luz    | alarme do tanque de alta pressão     | $s\_1$              | Luz ACESSA                                    
+| **PT-201**       | Transmissor Pressão     | Pressão do tanque de Armazenamento de média pressão   | $p\_2$              | Pressão excede o limite máximo de armazenamento ($P > 700\text{ bar}$) |
+| **TT-201**       | Transmissor Temp.       | Temp. do tanque de Armazenamento de média pressão      | $t\_2$              | Temperatura excede o limite seguro do vaso ($T > 85^\circ\text{C}$)    |
+| **AT-201**       | Detector de Gás H₂      | Concentração de H₂ na área do tanque de Armazenamento de média pressão          | $g\_2$              | Vazamento de hidrogênio detectado ($C > 1\text{% vol, } 25\text{% LIE}$) |                            |                                   |
+| **PSV-201**      | Válvula de Alívio       | Proteção contra sobrepressão         | $r\_2$              | Válvula de alívio de pressão ATUADA
+| **XV-201**       | Válvula Corte Rápido    | entrada do tanque de Armazenamento de média pressão      | $v\_2$              | Válvula de segurança de entrada ABERTA
+| **SL-201**       | Sinalizador / luz    | alarme do tanque de média pressão     | $s\_2$              | Luz ACESSA                                     
+| **PT-301**       | Transmissor Pressão     | Pressão do tanque de Armazenamento de alta pressão   | $p\_3$              | Pressão excede o limite máximo de armazenamento ($P > 1000\text{ bar}$) |
+| **TT-301**       | Transmissor Temp.       | Temp. do tanque de Armazenamento de alta pressão      | $t\_3$              | Temperatura excede o limite seguro do vaso ($T > 85^\circ\text{C}$)    |
+| **AT-301**       | Detector de Gás H₂      | Concentração de H₂ na área do tanque de Armazenamento de alta pressão          | $g\_3$              | Vazamento de hidrogênio detectado ($C > 1\text{% vol, } 25\text{% LIE}$) |                            |                                   |
+| **PSV-301**      | Válvula de Alívio       | Proteção contra sobrepressão         | $r\_3$              | Válvula de alívio de pressão ATUADA
+| **XV-301**       | Válvula Corte Rápido    | entrada do tanque de Armazenamento de alta pressão      | $v\_3$              | Válvula de segurança de entrada ABERTA
+| **SL-301**       | Sinalizador / luz    | alarme do tanque de alta pressão     | $s\_3$              | Luz ACESSA
+| **XV-104**       | 	Válvula Direcional 4/3 vias (duplo solenoide, retorno por mola)   | Posição de seleção do tanque     | $v\_4$              | quando ambas as bobinas não ligadas seleciona media pressão
+| **YV-104A**       | Bobina Solenoide (lado A)    | Comando elétrico de acionamento A     | $y\_a$              | Bobina A energizada → seleciona tanque de baixa pressão
+| **YV-104B**       | Bobina Solenoide (lado B)    | Comando elétrico de acionamento B     | $y\_b$              | Bobina B energizada → seleciona tanque de alta pressão
+                                    
 | **ALM-101**      | Sinaleiro / Buzzer      | Alarme Geral                         | $a\_1$              | Sistema de alarme e evacuação ATIVADO  
 | **ESD-100**      | Botão Físico            | Segurança Manual                     | $e\_1$              | Parada de emergência acionada pelo operador                                |
  
