@@ -28,8 +28,7 @@ Na automação industrial (norma ISA-5.1), instrumentos e atuadores emitem e rec
 | **SL-103**       | Sinalizador / luz    | alarme do tanque de alta pressão     | $s\_3$              | Luz ACESSA
 | **XV-104**       | 	Válvula Direcional 4/3 vias (duplo solenoide, retorno por mola)   | Posição de seleção do tanque     | $v\_4$              | quando ambas as bobinas não ligadas seleciona media pressão
 | **YV-104A**       | Bobina Solenoide (lado A)    | Comando elétrico de acionamento A     | $y\_a$              | Bobina A energizada → seleciona tanque de baixa pressão
-| **YV-104B**       | Bobina Solenoide (lado B)    | Comando elétrico de acionamento B     | $y\_b$              | Bobina B energizada → seleciona tanque de alta pressão
-                                    
+| **YV-104B**       | Bobina Solenoide (lado B)    | Comando elétrico de acionamento B     | $y\_b$              | Bobina B energizada → seleciona tanque de alta pressão                                  
 | **ALM-101**      | Sinaleiro / Buzzer      | Alarme Geral                         | $a\_1$              | Sistema de alarme e evacuação ATIVADO  
 | **ESD-100**      | Botão Físico            | Segurança Manual                     | $e\_1$              | Parada de emergência acionada pelo operador                                |
  
