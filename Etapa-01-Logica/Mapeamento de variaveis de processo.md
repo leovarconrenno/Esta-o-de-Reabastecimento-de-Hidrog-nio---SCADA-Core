@@ -8,7 +8,7 @@ Na automação industrial (norma ISA-5.1), instrumentos e atuadores emitem e rec
  
 | Tag Instrumento | Tipo de Dispositivo    | Variável Física                     | Proposição Lógica | Estado 1                                                             |
 | ---------------- | ----------------------- | ------------------------------------ | ------------------ | ---------------------------------------------------------------------- |
-| **PT-101**       | Transmissor Pressão     | Pressão do tanque de Armazenamento de baixa pressão   | $p\_1\_1$              | Pressão excede o limite máximo de armazenamento ($P > 400\text{ bar}$) |
+| **PT-101**       | Transmissor Pressão     | Pressão do tanque de Armazenamento de baixa pressão   | $p\_{1,1}$              | Pressão excede o limite máximo de armazenamento ($P > 400\text{ bar}$) |
 | **TT-101**       | Transmissor Temp.       | Temp. do tanque de Armazenamento de baixa pressão      | $t\_1\_1$              | Temperatura excede o limite seguro do vaso ($T > 85^\circ\text{C}$)    |
 | **AT-101**       | Detector de Gás H₂      | Concentração de H₂ na área do tanque de Armazenamento de baixa pressão          | $g\_1\_1$              | Vazamento de hidrogênio detectado ($C > 1\text{% vol, } 25\text{% LIE}$) |                            |                                   |
 | **PSV-101**      | Válvula de Alívio       | Proteção contra sobrepressão         | $r\_1\_1$              | Válvula de alívio de pressão ATUADA
