@@ -6,7 +6,7 @@ Este documento descreve os insumos físicos (matérias-primas e utilidades) que 
 
 Antes da abstração lógica, o sistema depende de insumos físicos fundamentais para a sua operação. Eles representam a massa e a energia transformadas ou controladas pela planta:
 
-* **Gás Hidrogênio ($H_2$):** A matéria-prima principal do processo. É recebido em baixa/média pressão, comprimido, armazenado em alta pressão e, por fim, dispensado no veículo.
+* **Gás Hidrogênio ($H_2$):** A matéria-prima principal do processo. É recebido em alta pressão, distribuido para o armazenamento em multiplas pressões e, por fim, dispensado no veículo.
 * **Energia Elétrica (Potência Motriz e Controle):** Insumo utilitário crítico que alimenta os motores dos compressores, as bombas do chiller e todo o painel de automação (CLP, SCADA, instrumentação).
 * **Fluido Refrigerante / Glicol:** Insumo utilitário circulante no sistema do Chiller (Setor 200), vital para o pré-resfriamento do hidrogênio ($T \leq -40^\circ C$) antes da dispensação.
 * **Ar Comprimido / Gás Nitrogênio ($N_2$):** Insumo utilitário frequentemente utilizado para atuação de válvulas pneumáticas ou rotinas de purga de segurança nas tubulações.
