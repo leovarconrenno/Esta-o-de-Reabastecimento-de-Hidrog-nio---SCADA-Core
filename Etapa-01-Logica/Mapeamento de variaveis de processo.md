@@ -23,7 +23,7 @@ Na automação industrial (norma ISA-5.1), instrumentos e atuadores emitem e rec
 | **XV-102**       | Válvula Corte Rápido    | entrada do tanque de Armazenamento de média pressão      | $v\_{1,2}$              | Válvula de segurança de entrada ABERTA
 | **SL-102**       | Sinalizador / luz    | alarme do tanque de média pressão     | $s\_{1,2}$              | Luz ACESSA                                     
 | **PT-103**       | Transmissor Pressão     | Pressão do tanque de Armazenamento de alta pressão   | $p\_{1,3}$              | Pressão excede o limite máximo de armazenamento ($P > 1000\text{ bar}$) |
-| **PT-106**       | Transmissor Pressão     | Pressão do tanque de Armazenamento de alta pressão   | $p\_{1,5}$              | Pressão atinge o desejado do tanque ($P > 950\text{ bar}$) |
+| **PT-106**       | Transmissor Pressão     | Pressão do tanque de Armazenamento de alta pressão   | $p\_{1,6}$              | Pressão atinge o desejado do tanque ($P > 950\text{ bar}$) |
 | **TT-103**       | Transmissor Temp.       | Temp. do tanque de Armazenamento de alta pressão      | $t\_{1,3}$              | Temperatura excede o limite seguro do vaso ($T > 85^\circ\text{C}$)    |
 | **AT-103**       | Detector de Gás H₂      | Concentração de H₂ na área do tanque de Armazenamento de alta pressão          | $g\_{1,3}$              | Vazamento de hidrogênio detectado ($C > 1\text{% vol, } 25\text{% LIE}$) |                            |                                   |
 | **PSV-103**      | Válvula de Alívio       | Proteção contra sobrepressão         | $r\_{1,3}$              | Válvula de alívio de pressão ATUADA
