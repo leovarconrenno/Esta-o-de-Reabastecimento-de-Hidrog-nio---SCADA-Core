@@ -2,7 +2,7 @@
 
 Na automação industrial (norma ISA-5.1), instrumentos e atuadores emitem e recebem sinais discretos (binários: $0$ = Falso / $1$ = Verdadeiro). 
 
-![Estação de reabastecimento](/Etapa-01-Logica/Projeto2.png)
+![Estação de reabastecimento](/Etapa-01-Logica/projeto2.png)
 
 ## Setor 100: Armazenamento de Hidrogênio (Banco de Cilindros de Alta Pressão)
  
