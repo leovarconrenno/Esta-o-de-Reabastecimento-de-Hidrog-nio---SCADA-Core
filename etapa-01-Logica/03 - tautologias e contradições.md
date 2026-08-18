@@ -9,39 +9,26 @@ A válvula de corte rápido do banco de armazenamento ($v_{1,X}$, XV-10X) deve s
 
 * **Condição de Falha / Evento Crítico ($F_1$):**
 
-$$F_1 \equiv s\_{1,x} \equiv p_{1,X} \lor t_{1,X} \lor g_{1,X} \lor e_1$$
+$$F_{1,X}  \equiv p_{1,X} \lor t_{1,X} \lor g_{1,X} \lor e_1$$
 
 * **Equação Lógica de Intertravamento:**
 
-$$F_1 \rightarrow (\neg v_1 \land a_1)$$
+$$F_{1,X} \rightarrow (\neg v_{1,X} \land S{1,x} \land a_1)$$
+
+$$F_{1,X}  \equiv F_1 $$
 
 Adicionalmente, a válvula de alívio ($r_1$, PSV-101) atua especificamente em caso de sobrepressão, de forma independente do fechamento de $v_1$:
 
-$$p_1 \rightarrow r_1$$
+$$p_{1,x} \rightarrow r_{1,x}$$
 
-## B. Permissivo de Partida do Compressor (Setor 200)
+* **Exemplo para o tanque 1**
 
-O motor do compressor ($m_1$) SÓ PODE partir se houver suprimento de gás disponível (válvula de saída do armazenamento aberta, $v_1$) e não houver nenhuma condição de falha ativa no armazenamento nem no próprio compressor.
+$$F_{1,1}  \equiv p_{1,1} \lor t_{1,1} \lor g_{1,1} \lor e_1$$
 
-* **Condição de Permissivo de Partida ($P_{comp}$):**
+$$F_{1,X} \rightarrow (\neg v_{1,1} \land S{1,1} \land a_1)$$
 
-$$P_{comp} \equiv v_1 \land \neg p_1 \land \neg t_1 \land \neg g_1 \land \neg e_1 \land \neg p_2 \land \neg t_2 \land \neg vb_1$$
+$$p_{1,1} \rightarrow r_{1,1}$$
 
-* **Regra Operacional:**
-
-$$m_1 \rightarrow P_{comp}$$
-
-## C. Proteção do Compressor contra Sobrepressão, Sobretemperatura e Vibração (Setor 200)
-
-O motor do compressor ($m_1$) deve ser desligado ($\neg m_1$) caso a pressão de descarga ultrapasse o limite, a temperatura do cabeçote exceda o valor seguro, ou a vibração ultrapasse o limiar de disparo (trip).
-
-* **Condição de Falha do Compressor ($F_2$):**
-
-$$F_2 \equiv p_2 \lor t_2 \lor vb_1$$
-
-* **Regra de Desligamento:**
-
-$$F_2 \rightarrow \neg m_1$$
 
 ## D. Permissivo de Abertura do Dispensador / Início de Abastecimento (Setor 400)
 
