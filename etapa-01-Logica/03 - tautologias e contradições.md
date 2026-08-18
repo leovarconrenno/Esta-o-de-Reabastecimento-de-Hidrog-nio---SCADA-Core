@@ -39,17 +39,17 @@ $$p_{1,6} \land \neg p_{1,5} \rightarrow (\neg v_{1,3} \land v_{1,2} \land \neg 
 
 $$p_{1,6} \land p_{1,5} \land \neg p_{1,4} \rightarrow (\neg v_{1,3} \land \neg v_{1,2} \land v_{1,1})$$
 
-## D. Permissivo de Abertura do Dispensador / Início de Abastecimento (Setor 300)
+### D. Permissivo de Abertura do Dispensador / Início de Abastecimento (Setor 300)
 
-A válvula de dispensação ($v_{3,1}$, XV-301) só pode abrir se: o operador tiver acionado o comando de início ($h_{3,1}$), a comunicação com o veículo estiver estabelecida ($c_{3,1}$), o acoplamento *breakaway* estiver íntegro ($bv_{3,1}$), o condicionamento do gás estiver adequado (pré-resfriamento $t_{3,1}$, pressão de buffer $p_{3,1}$ e chiller operacional $m_{2,1}$), e não houver vazamento de H₂ em nenhuma das duas zonas de detecção ($g_{1,X}$, $g_{3,1}$) nem parada de emergência ativa ($e_1$).
+A válvula de dispensação ($v_{3,1}$, XV-301) só pode abrir se: o operador tiver acionado o comando de início ($h_{3,1}$), a comunicação com o veículo estiver estabelecida ($c_{3,1}$), o acoplamento breakaway estiver íntegro ($bv_{3,1}$), o condicionamento do gás estiver adequado (pré-resfriamento $t_{3,1}$, pressão de buffer $p_{3,1}$ e chiller operacional $m_{2,1}$), e não houver vazamento de H₂ em nenhuma das duas zonas de detecção ($g_{1,X}$, $g_{3,1}$) nem parada de emergência ativa ($e_1$).
 
 * **Condição de Permissivo de Abertura ($P_{disp}$):**
 
-$$P_{disp} \equiv h_1 \land c_1 \land bv_1 \land t_3 \land p_3 \land m_2 \land \neg g_1 \land \neg g_2 \land \neg e_1$$
+$$P_{disp} \equiv h_{3,1} \land c_{3,1} \land bv_{3,1} \land t_{3,1} \land p_{3,1} \land m_{2,1} \land \lnot g_{1,X} \land \lnot g_{3,1} \land \lnot e_1$$
 
 * **Regra Operacional:**
 
-$$v_2 \rightarrow P_{disp}$$
+$$P_{disp} \rightarrow v_{3,1}$$
 
 ## E. Trip de Abastecimento — Fechamento Imediato do Dispensador (Setor 300)
 
