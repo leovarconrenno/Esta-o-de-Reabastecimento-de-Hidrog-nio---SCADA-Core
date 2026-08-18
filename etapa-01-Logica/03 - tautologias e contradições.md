@@ -5,7 +5,7 @@ No contexto do controle lógico de processos da Estação de Reabastecimento de 
 
 ## A. Intertrava de Trip de Emergência do Banco de Armazenamento (Setor 100)
 
-A válvula de corte rápido do banco de armazenamento ($v_{1,X}$, XV-10X) deve ser imediatamente FECHADA ($\neg v_1$) e o alarme geral acionado ($a_1$)e a respectiva sinalização ($s\_{1,X}$ ,SL-10X) caso haja sobrepressão, sobretemperatura, vazamento de gás ou acionamento manual de emergência.
+A válvula de corte rápido do banco de armazenamento ($v_{1,X}$, XV-10X {1-3}) deve ser imediatamente FECHADA ($\neg v_{1,X}$) e o alarme geral acionado ($a_1$)e a respectiva sinalização ($s\_{1,X}$ ,SL-10X) caso haja sobrepressão, sobretemperatura, vazamento de gás ou acionamento manual de emergência.
 
 * **Condição de Falha / Evento Crítico ($F_1$):**
 
@@ -19,7 +19,7 @@ $$F_{1,X}  \equiv F_1 $$
 
 Adicionalmente, a válvula de alívio ($r_1$, PSV-101) atua especificamente em caso de sobrepressão, de forma independente do fechamento de $v_1$:
 
-$$p_{1,x} \rightarrow r_{1,x}$$
+$$p_{1,x} C r_{1,x}$$
 
 * **Exemplo para o tanque 1**
 
@@ -29,6 +29,15 @@ $$F_{1,X} \rightarrow (\neg v_{1,1} \land S{1,1} \land a_1)$$
 
 $$p_{1,1} \rightarrow r_{1,1}$$
 
+## B. Abastecimento (Setor 100)
+
+a ordem de abastecimento é tanque 3 $$\rightarrow$$ tanque 2 $$\rightarrow$$ tanque 1 sendo comandandado pelos sensores de presssão ($$p_{1,X}$$ , PT-10X {4-6})
+
+$$\neg p_{1,6} \rightarrow ( v_{1,3} \land \neg v_{1,2} \land \neg v_{1,1})$$
+
+$$p_{1,6} \land \neg p_{1,5} \rightarrow (\neg v_{1,3} \land v_{1,2} \land \neg v_{1,1})$$
+
+$$p_{1,6} \land p_{1,5} \land \neg p_{1,4} \rightarrow (\neg v_{1,3} \land \neg v_{1,2} \land v_{1,1})$$
 
 ## D. Permissivo de Abertura do Dispensador / Início de Abastecimento (Setor 400)
 
