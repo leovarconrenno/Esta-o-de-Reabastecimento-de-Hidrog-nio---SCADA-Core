@@ -25,11 +25,11 @@ $$p_{1,x} C r_{1,x}$$
 
 $$F_{1,1}  \equiv p_{1,1} \lor t_{1,1} \lor g_{1,1} \lor e_1$$
 
-$$F_{1,X} \rightarrow (\neg v_{1,1} \land S{1,1} \land a_1)$$
+$$F_{1,1} \rightarrow (\neg v_{1,1} \land S{1,1} \land a_1)$$
 
 $$p_{1,1} \rightarrow r_{1,1}$$
 
-## B. Abastecimento (Setor 100)
+## B. Abastecimento dos tanques (Setor 100)
 
 a ordem de abastecimento é tanque 3 $$\rightarrow$$ tanque 2 $$\rightarrow$$ tanque 1 sendo comandandado pelos sensores de presssão ($$p_{1,X}$$ , PT-10X {4-6})
 
@@ -39,9 +39,9 @@ $$p_{1,6} \land \neg p_{1,5} \rightarrow (\neg v_{1,3} \land v_{1,2} \land \neg 
 
 $$p_{1,6} \land p_{1,5} \land \neg p_{1,4} \rightarrow (\neg v_{1,3} \land \neg v_{1,2} \land v_{1,1})$$
 
-## D. Permissivo de Abertura do Dispensador / Início de Abastecimento (Setor 400)
+## D. Permissivo de Abertura do Dispensador / Início de Abastecimento (Setor 300)
 
-A válvula de dispensação ($v_2$, XV-401) só pode abrir se: o operador tiver acionado o comando de início ($h_1$), a comunicação com o veículo estiver estabelecida ($c_1$), o acoplamento *breakaway* estiver íntegro ($bv_1$), o condicionamento do gás estiver adequado (pré-resfriamento $t_3$, pressão de buffer $p_3$ e chiller operacional $m_2$), e não houver vazamento de H₂ em nenhuma das duas zonas de detecção ($g_1$, $g_2$) nem parada de emergência ativa ($e_1$).
+A válvula de dispensação ($v_{3,1}$, XV-301) só pode abrir se: o operador tiver acionado o comando de início ($h_1$), a comunicação com o veículo estiver estabelecida ($c_1$), o acoplamento *breakaway* estiver íntegro ($bv_1$), o condicionamento do gás estiver adequado (pré-resfriamento $t_3$, pressão de buffer $p_3$ e chiller operacional $m_2$), e não houver vazamento de H₂ em nenhuma das duas zonas de detecção ($g_1$, $g_2$) nem parada de emergência ativa ($e_1$).
 
 * **Condição de Permissivo de Abertura ($P_{disp}$):**
 
@@ -51,17 +51,17 @@ $$P_{disp} \equiv h_1 \land c_1 \land bv_1 \land t_3 \land p_3 \land m_2 \land \
 
 $$v_2 \rightarrow P_{disp}$$
 
-## E. Trip de Abastecimento — Fechamento Imediato do Dispensador (Setor 400)
+## E. Trip de Abastecimento — Fechamento Imediato do Dispensador (Setor 300)
 
-A válvula de dispensação ($v_2$) deve ser imediatamente fechada ($\neg v_2$) se a temperatura no ponto de recepção do veículo exceder o limite, se houver vazamento de H₂ detectado na área do dispensador, se o *breakaway* se desconectar, ou se a parada de emergência for acionada.
+A válvula de dispensação ($v_3$) deve ser imediatamente fechada ($\neg v_3$) se a temperatura no ponto de recepção do veículo exceder o limite, se houver vazamento de H₂ detectado na área do dispensador, se o *breakaway* se desconectar, ou se a parada de emergência for acionada.
 
 * **Condição de Falha de Abastecimento ($F_3$):**
 
-$$F_3 \equiv t_4 \lor g_2 \lor \neg bv_1 \lor e_1$$
+$$F_3 \equiv t_{3,1} \lor g_{3,1} \lor \neg bv_{3,1} \lor e_1$$
 
 * **Regra de Bloqueio:**
 
-$$F_3 \rightarrow \neg v_2$$
+$$F_3 \rightarrow \neg v_{3,1}$$
 
 ---
 
