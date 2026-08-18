@@ -5,11 +5,11 @@ No contexto do controle lógico de processos da Estação de Reabastecimento de 
 
 ## A. Intertrava de Trip de Emergência do Banco de Armazenamento (Setor 100)
 
-A válvula de corte rápido do banco de armazenamento ($v_1$, XV-101) deve ser imediatamente FECHADA ($\neg v_1$) e o alarme geral acionado ($a_1$) caso haja sobrepressão, sobretemperatura, vazamento de gás ou acionamento manual de emergência.
+A válvula de corte rápido do banco de armazenamento ($v_{1,X}$, XV-10X) deve ser imediatamente FECHADA ($\neg v_1$) e o alarme geral acionado ($a_1$)e a respectiva sinalização ($s\_{1,X}$ ,SL-10X) caso haja sobrepressão, sobretemperatura, vazamento de gás ou acionamento manual de emergência.
 
 * **Condição de Falha / Evento Crítico ($F_1$):**
 
-$$F_1 \equiv p_1 \lor t_1 \lor g_1 \lor e_1$$
+$$F_1 \equiv s\_{1,x} \equiv p_{1,X} \lor t_{1,X} \lor g_{1,X} \lor e_1$$
 
 * **Equação Lógica de Intertravamento:**
 
